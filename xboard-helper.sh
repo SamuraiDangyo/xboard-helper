@@ -33,7 +33,6 @@ tar -xf MayhemDuck-2.1.tar.gz
 cp MayhemDuck-2.1/mayhemduck-2.1-x86-linux-64bit /usr/games/mayhemduck
 #cp MayhemDuck-2.1/mayhemduck-2.1-x86-linux-avx2-64bit /usr/games/mayhemduck # For newer CPUs
 
-
 # Cleanup
 rm -r -f uci2wb-6b6a612
 rm -r -f xboard-v4.9.x-167d205
