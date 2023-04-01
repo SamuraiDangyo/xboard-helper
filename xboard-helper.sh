@@ -9,6 +9,10 @@ VERSION="xboard-helper 0.1"
 
 echo "Hello from $VERSION !"
 
+# Install packages ( propably more is needed ... ) and update
+apt install libgtk2.0-dev libglib2.0-dev
+apt update
+
 # Compile + Install Xboard
 #wget http://hgm.nubati.net/transfer/xboard-4.9.1.tar.gz
 tar -xf xboard-v4.9.x-167d205.tar.gz
@@ -29,14 +33,15 @@ cp UCI2WB /usr/games/uci2wb
 cd ..
 
 # Install MayhemDuck
-tar -xf MayhemDuck-2.2.tar.gz
-cp MayhemDuck-2.2/mayhemduck-2.2-x86-linux-64bit /usr/games/mayhemduck
-#cp MayhemDuck-2.2/mayhemduck-2.2-x86-linux-avx2-64bit /usr/games/mayhemduck # For newer CPUs
+tar -xf MayhemDuck-2.3.tar.gz
+cp MayhemDuck-2.3/mayhemduck-2.3-x86-linux-64bit /usr/games/mayhemduck
+#cp MayhemDuck-2.3/mayhemduck-2.3-x86-linux-avx2-64bit /usr/games/mayhemduck # For newer CPUs
+
 
 # Cleanup
 rm -r -f uci2wb-6b6a612
 rm -r -f xboard-v4.9.x-167d205
-rm -r -f MayhemDuck-2.2
+rm -r -f MayhemDuck-2.1
 rm -f *.png
 
 # Play MayhemDuck
